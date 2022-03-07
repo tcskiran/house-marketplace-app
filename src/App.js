@@ -11,6 +11,8 @@ import Profile from '../src/pages/Profile';
 import SignIn from '../src/pages/SignIn';
 import SignUp from '../src/pages/SignUp';
 import CreateListing from '../src/pages/CreateListing';
+import Listing from '../src/pages/Listing';
+import Contact from '../src/pages/Contact';
 
 function App() {
   return (
@@ -27,6 +29,11 @@ function App() {
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/create-listing" element={<CreateListing />} />
+          <Route
+            path="/category/:categoryName/:listingId"
+            element={<Listing />}
+          />
+          <Route path="/contact/:landlordId" element={<Contact />} />
         </Routes>
         <Navbar />
       </Router>
