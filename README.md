@@ -2,6 +2,8 @@
 
 A react app to post the house which you want to rent/sell.
 
+Used React for frontend and firebase for backend.
+
 [Link to preview](https://house-marketplace-app-tcskiran.vercel.app/)
 
 ## Usage
