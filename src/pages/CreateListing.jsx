@@ -15,7 +15,7 @@ import Spinner from '../components/Spinner';
 
 function CreateListing() {
   // eslint-disable-next-line no-unused-vars
-  const [geolocationEnabled, setGeolocationEnabled] = useState(false);
+  const [geolocationEnabled, setGeolocationEnabled] = useState(false); // Change to true if you have google API key
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     type: 'rent',
@@ -90,6 +90,7 @@ function CreateListing() {
     let geolocation = {};
     let location;
 
+    // Add your API key here
     if (geolocationEnabled) {
       const response = await fetch(
         `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key={YOUR_GOOGLE_CLOUD_API_KEY}`
